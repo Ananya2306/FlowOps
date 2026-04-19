@@ -1,0 +1,156 @@
+<svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="520" fill="url(#bg)" rx="16"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" fill="#f1f5f9" font-size="17" font-weight="700" letter-spacing="1">FlowOps — System Architecture</text>
+  <text x="450" y="56" text-anchor="middle" fill="#64748b" font-size="11">Real-Time Crowd Flow Optimization</text>
+
+  <!-- ── Layer labels ── -->
+  <text x="30" y="105" fill="#475569" font-size="10" font-weight="600" letter-spacing="1.5" text-transform="uppercase">USER</text>
+  <text x="30" y="215" fill="#475569" font-size="10" font-weight="600" letter-spacing="1.5">FRONTEND</text>
+  <text x="30" y="320" fill="#475569" font-size="10" font-weight="600" letter-spacing="1.5">API LAYER</text>
+  <text x="30" y="420" fill="#475569" font-size="10" font-weight="600" letter-spacing="1.5">SERVICES</text>
+
+  <!-- Horizontal dividers -->
+  <line x1="80" y1="130" x2="870" y2="130" stroke="#1e293b" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="80" y1="240" x2="870" y2="240" stroke="#1e293b" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="80" y1="350" x2="870" y2="350" stroke="#1e293b" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- ══ USER ROW ══ -->
+  <!-- Mobile User -->
+  <rect x="130" y="78" width="110" height="50" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="185" y="97" text-anchor="middle" fill="#94a3b8" font-size="18">📱</text>
+  <text x="185" y="115" text-anchor="middle" fill="#cbd5e1" font-size="11" font-weight="600">Mobile User</text>
+
+  <!-- Stadium Staff -->
+  <rect x="390" y="78" width="120" height="50" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="97" text-anchor="middle" fill="#94a3b8" font-size="18">👷</text>
+  <text x="450" y="115" text-anchor="middle" fill="#cbd5e1" font-size="11" font-weight="600">Stadium Staff</text>
+
+  <!-- Admin Dashboard -->
+  <rect x="660" y="78" width="120" height="50" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="720" y="97" text-anchor="middle" fill="#94a3b8" font-size="18">🖥️</text>
+  <text x="720" y="115" text-anchor="middle" fill="#cbd5e1" font-size="11" font-weight="600">Admin Dashboard</text>
+
+  <!-- Arrows: user → frontend -->
+  <line x1="185" y1="128" x2="185" y2="158" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="128" x2="450" y2="158" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="720" y1="128" x2="720" y2="158" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ══ FRONTEND ROW ══ -->
+  <rect x="100" y="158" width="700" height="72" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" filter="url(#glow)"/>
+  <rect x="100" y="158" width="700" height="72" rx="12" fill="url(#blue)" opacity="0.06"/>
+  <text x="210" y="183" text-anchor="middle" fill="#3b82f6" font-size="13" font-weight="700">🌐 Streamlit Frontend</text>
+  <text x="210" y="200" text-anchor="middle" fill="#64748b" font-size="10">Exit recommendations · Zone map</text>
+  <text x="210" y="215" text-anchor="middle" fill="#64748b" font-size="10">Auto-refresh · Surge controls</text>
+
+  <!-- REST divider -->
+  <line x1="330" y1="165" x2="330" y2="223" stroke="#334155" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="450" y="183" text-anchor="middle" fill="#94a3b8" font-size="10">HTTP / REST</text>
+  <text x="450" y="197" text-anchor="middle" fill="#64748b" font-size="9">JSON responses</text>
+  <text x="450" y="209" text-anchor="middle" fill="#64748b" font-size="9">auto-refresh 5s</text>
+
+  <line x1="570" y1="165" x2="570" y2="223" stroke="#334155" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="670" y="190" text-anchor="middle" fill="#94a3b8" font-size="10">api_client.py</text>
+  <text x="670" y="205" text-anchor="middle" fill="#64748b" font-size="9">fetch / post wrappers</text>
+
+  <!-- Arrow: frontend → API -->
+  <line x1="450" y1="230" x2="450" y2="260" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- ══ API LAYER ══ -->
+  <rect x="100" y="260" width="700" height="78" rx="12" fill="#1e293b" stroke="#a855f7" stroke-width="1.5" filter="url(#glow)"/>
+  <rect x="100" y="260" width="700" height="78" rx="12" fill="url(#purple)" opacity="0.06"/>
+
+  <!-- Endpoint boxes inside API -->
+  <rect x="120" y="272" width="140" height="54" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="190" y="291" text-anchor="middle" fill="#a855f7" font-size="10" font-weight="700">GET /zones</text>
+  <text x="190" y="305" text-anchor="middle" fill="#64748b" font-size="9">Live crowd state</text>
+  <text x="190" y="318" text-anchor="middle" fill="#64748b" font-size="9">VenueState model</text>
+
+  <rect x="280" y="272" width="160" height="54" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="360" y="291" text-anchor="middle" fill="#a855f7" font-size="10" font-weight="700">GET /recommendation</text>
+  <text x="360" y="305" text-anchor="middle" fill="#64748b" font-size="9">Best exit + alternative</text>
+  <text x="360" y="318" text-anchor="middle" fill="#64748b" font-size="9">Confidence score</text>
+
+  <rect x="460" y="272" width="140" height="54" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="530" y="291" text-anchor="middle" fill="#a855f7" font-size="10" font-weight="700">POST /simulate</text>
+  <text x="530" y="305" text-anchor="middle" fill="#64748b" font-size="9">Advance simulation</text>
+  <text x="530" y="318" text-anchor="middle" fill="#64748b" font-size="9">Optional surge event</text>
+
+  <rect x="620" y="272" width="162" height="54" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="701" y="291" text-anchor="middle" fill="#a855f7" font-size="10" font-weight="700">POST /reset</text>
+  <text x="701" y="305" text-anchor="middle" fill="#64748b" font-size="9">Restore defaults</text>
+  <text x="701" y="318" text-anchor="middle" fill="#64748b" font-size="9">FastAPI · Pydantic</text>
+
+  <!-- Arrows: API → services -->
+  <line x1="280" y1="338" x2="240" y2="368" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="338" x2="450" y2="368" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="620" y1="338" x2="660" y2="368" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ══ SERVICES ROW ══ -->
+  <!-- Simulation Engine -->
+  <rect x="100" y="368" width="220" height="104" rx="12" fill="#1e293b" stroke="#f97316" stroke-width="1.5"/>
+  <rect x="100" y="368" width="220" height="104" rx="12" fill="url(#orange)" opacity="0.06"/>
+  <text x="210" y="390" text-anchor="middle" fill="#f97316" font-size="12" font-weight="700">⚙️ Simulation Engine</text>
+  <text x="210" y="408" text-anchor="middle" fill="#94a3b8" font-size="10">crowd_simulation.py</text>
+  <text x="210" y="423" text-anchor="middle" fill="#64748b" font-size="9">· Random drift + sine pulse</text>
+  <text x="210" y="437" text-anchor="middle" fill="#64748b" font-size="9">· Surge event injection</text>
+  <text x="210" y="451" text-anchor="middle" fill="#64748b" font-size="9">· Flow-rate decay model</text>
+  <text x="210" y="465" text-anchor="middle" fill="#64748b" font-size="9">· In-memory state (Redis-ready)</text>
+
+  <!-- Decision Engine -->
+  <rect x="340" y="368" width="220" height="104" rx="12" fill="#1e293b" stroke="#22c55e" stroke-width="1.5"/>
+  <rect x="340" y="368" width="220" height="104" rx="12" fill="url(#green)" opacity="0.06"/>
+  <text x="450" y="390" text-anchor="middle" fill="#22c55e" font-size="12" font-weight="700">🧠 Decision Engine</text>
+  <text x="450" y="408" text-anchor="middle" fill="#94a3b8" font-size="10">decision_engine.py</text>
+  <text x="450" y="423" text-anchor="middle" fill="#64748b" font-size="9">· Weighted score (density+wait+flow)</text>
+  <text x="450" y="437" text-anchor="middle" fill="#64748b" font-size="9">· Confidence gap analysis</text>
+  <text x="450" y="451" text-anchor="middle" fill="#64748b" font-size="9">· Human-friendly message gen</text>
+  <text x="450" y="465" text-anchor="middle" fill="#64748b" font-size="9">· Best + alternative exit routing</text>
+
+  <!-- Data Store -->
+  <rect x="580" y="368" width="220" height="104" rx="12" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+  <text x="690" y="390" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="700">🗄️ State Store</text>
+  <text x="690" y="408" text-anchor="middle" fill="#94a3b8" font-size="10">sample_zones.json → In-Memory</text>
+  <text x="690" y="423" text-anchor="middle" fill="#64748b" font-size="9">· 5 exit zones with coordinates</text>
+  <text x="690" y="437" text-anchor="middle" fill="#64748b" font-size="9">· density, flow_rate, status</text>
+  <text x="690" y="451" text-anchor="middle" fill="#64748b" font-size="9">· estimated_wait_minutes</text>
+  <text x="690" y="465" text-anchor="middle" fill="#64748b" font-size="9">→ swap Redis for production</text>
+
+  <!-- legend -->
+  <text x="450" y="508" text-anchor="middle" fill="#334155" font-size="9">FastAPI · Streamlit · Pydantic · Altair · Docker · Python 3.11</text>
+</svg>
