@@ -1,0 +1,65 @@
+{
+  "venue": {
+    "name": "FlowOps Demo Arena",
+    "capacity": 50000,
+    "event": "Post-Match Exit Scenario",
+    "timestamp": "2025-04-19T21:45:00Z"
+  },
+  "zones": [
+    {
+      "id": "EXIT_A",
+      "label": "Exit A",
+      "location": "North Gate",
+      "capacity": 12000,
+      "current_crowd": 9600,
+      "density": 0.80,
+      "flow_rate": 420,
+      "status": "HIGH",
+      "coordinates": { "x": 0.5, "y": 0.05 }
+    },
+    {
+      "id": "EXIT_B",
+      "label": "Exit B",
+      "location": "East Gate",
+      "capacity": 10000,
+      "current_crowd": 3000,
+      "density": 0.30,
+      "flow_rate": 680,
+      "status": "LOW",
+      "coordinates": { "x": 0.95, "y": 0.5 }
+    },
+    {
+      "id": "EXIT_C",
+      "label": "Exit C",
+      "location": "South Gate",
+      "capacity": 15000,
+      "current_crowd": 7500,
+      "density": 0.50,
+      "flow_rate": 550,
+      "status": "MEDIUM",
+      "coordinates": { "x": 0.5, "y": 0.95 }
+    },
+    {
+      "id": "EXIT_D",
+      "label": "Exit D",
+      "location": "West Gate",
+      "capacity": 8000,
+      "current_crowd": 6800,
+      "density": 0.85,
+      "flow_rate": 310,
+      "status": "CRITICAL",
+      "coordinates": { "x": 0.05, "y": 0.5 }
+    },
+    {
+      "id": "EXIT_E",
+      "label": "Exit E",
+      "location": "NE Concourse",
+      "capacity": 5000,
+      "current_crowd": 1750,
+      "density": 0.35,
+      "flow_rate": 620,
+      "status": "LOW",
+      "coordinates": { "x": 0.82, "y": 0.18 }
+    }
+  ]
+}
