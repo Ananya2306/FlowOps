@@ -7,7 +7,7 @@ Centralizes all HTTP calls so the UI layer stays clean.
 import requests
 from typing import Optional
 
-BASE_URL = "http://localhost:8000"
+BASE_URL = "https://flowops-b2gv.onrender.com"
 TIMEOUT  = 5  # seconds
 
 
